@@ -1,29 +1,25 @@
-#include <iostream>
-#include <algorithm>   //會用到 
+//Vito's Family
+#include<iostream>
+#include<algorithm>
 using namespace std;
-int main()
-{
-    int testcase;    //how many testcase?
-    cin>>testcase;
-    int d[500]={0}; 
-    for(int i=0;i<testcase;i++){
-        int r;   
-        cin>>r;
-        int s[500];    //每個親戚的門牌號碼，上限500人
-        int mid;
-        for(int j=0;j<r;j++){
-        cin>>s[j];    }
-        sort(s,s+r);
-        mid =s[(int)r/2];    //取中位數
-        for(int j=0;j<r;j++)
-        {
-            d[i]+=abs(s[j]-mid);
-        }
-    }
-for (int i=0;i<testcase;i++){
-    cout<<d[i]<<endl;
+int main () {
+ int ts;
+ cin>>ts;
+ 
+ for(int k=0; k<ts; k++){
+ int ts2;
+ cin>>ts2;
+ 
+ int r[501];
+ int mid = ts2/2;
+ int sum = 0;
+ for(int i=0; i<ts2; i++)cin>>r[i];
+ sort(r,r+ts2);
+ for(int i=0; i<ts2; i++){
+ sum = sum + abs(r[mid]-r[i]);
+ }
+ cout<<sum<<endl;
+ }
+ 
+ return 0;
 }
-
-return 0;
-
-} 
