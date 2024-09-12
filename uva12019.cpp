@@ -1,4 +1,4 @@
-
+//Doom's Day Algorithm
 #include <iostream>
 #include <string>
 using namespace std;
