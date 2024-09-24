@@ -1,3 +1,4 @@
+//the 3n+1 problem
 #include<iostream>
 using namespace std;
 int main(){
