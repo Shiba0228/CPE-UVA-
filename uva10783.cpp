@@ -1,4 +1,6 @@
 //odd sum
+//計算題目提供兩數範圍內之奇數總和
+// 用迴圈計算 a~b之奇數相加
 #include <iostream>
 using namespace std;
 
