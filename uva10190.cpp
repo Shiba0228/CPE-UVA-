@@ -1,37 +1,30 @@
+//divide but not conquer
+//uva10190
 #include <iostream>
-#include <vector>
+#include <cmath>
 using namespace std;
 
-int main(){
-    long long int n, m;
-    vector<long long int> list; 
-    bool isBoring;
+int main() {
+    long long n, m, i;
 
-    while (cin >> n >> m){
-        isBoring = false;
-        list.clear();
+    while (cin >> n >> m) {
+        long long cn1 = m;
 
-        if (n < m || m <= 1 || n <= 1){
+        for (i = 1; cn1 < n && m > 1; i++) {
+            cn1 = pow(m, i);
+        }
+
+        if (cn1 > n || m <= 1) {
             cout << "Boring!" << endl;
         } else {
-            for (; n > 1; n /= m){
-                if (n % m == 0){
-                    list.push_back(n);
+            while (cn1 > 0) {
+                cout << cn1;
+                if (cn1 != 1) {
+                    cout << " ";
                 } else {
-                    isBoring = true;
-                    break;
+                    cout << endl;
                 }
-            }
-            list.push_back(1);
-
-            if (!isBoring){
-                cout << list[0];
-                for (int i = 1; i < list.size(); i++){
-                    cout << " " << list[i];
-                }
-                cout << endl;
-            }else{
-                cout << "Boring!" << endl;
+                cn1 /= m;
             }
         }
     }
