@@ -1,3 +1,4 @@
+//use long long
 #include<iostream>
 #include<cstdlib>
 using namespace std;
