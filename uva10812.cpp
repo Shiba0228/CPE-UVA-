@@ -1,3 +1,5 @@
+//uva10812
+//beat the spread
 #include <iostream>
 using namespace std;
 
