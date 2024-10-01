@@ -1,3 +1,4 @@
+//Primary Arithmetic
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
@@ -7,7 +8,7 @@ int main() {
 
         // Calculation
         int count = 0, carry = 0;
-        while(a || b) {    //·ía©Îb¦³¤@¼Æµ¥©ó0«K°±¤î­pºâ
+        while(a || b) {    //ç•¶aæˆ–bæœ‰ä¸€æ•¸ç­‰æ–¼0ä¾¿åœæ­¢è¨ˆç®—
             if(a%10 + b%10 + carry >= 10) {
                 count++;
                 carry=1;
