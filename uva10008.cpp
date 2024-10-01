@@ -1,4 +1,5 @@
 //What's Cryptanalysis?
+//字元、計數
 #include <iostream>
 #include <cctype>
 using namespace std;
