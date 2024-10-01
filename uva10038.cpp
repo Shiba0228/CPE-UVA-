@@ -1,4 +1,5 @@
 //Jolly Jumper
+//用vector解
 #include <iostream>
 #include <vector>
 #include <cmath>
