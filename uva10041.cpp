@@ -1,4 +1,5 @@
 //Vito's Family
+//median
 #include<iostream>
 #include<algorithm>
 using namespace std;
@@ -10,7 +11,7 @@ int main () {
  int ts2;
  cin>>ts2;
  
- int r[501];
+ int r[501]; //array
  int mid = ts2/2;
  int sum = 0;
  for(int i=0; i<ts2; i++)cin>>r[i];
