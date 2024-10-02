@@ -13,7 +13,7 @@ int main() {
         if(p==0)
         	cout<<"0.0000"<<endl;
         else
-        	printf("%.4f\n", (pow(q, (i - 1)) * p) / (1 - pow(q, n)));
+        	printf("%.4f\n", (pow(q, (i - 1)) * p) / (1 - pow(q, n))); //小數第四位
     }
     return 0;
 }
