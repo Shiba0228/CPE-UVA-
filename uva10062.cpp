@@ -1,4 +1,5 @@
 //tell me the frequencies
+//getline input
 #include <iostream>
 #include <algorithm>
 #include <string>
