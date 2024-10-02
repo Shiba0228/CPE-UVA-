@@ -10,7 +10,7 @@ int main()
     while(t--) 
     {
         cin>>n>>p;//輸入天數和黨數 
-        int day[n+1]={0},hi=0,h[p]={0};
+        int day[n+1]={0},hi=0,h[p]={0}; //初始化
         
         for(i=0;i<p;i++)
         {
