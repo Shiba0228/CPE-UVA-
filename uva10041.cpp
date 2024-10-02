@@ -17,7 +17,7 @@ int main () {
  for(int i=0; i<ts2; i++)cin>>r[i];
  sort(r,r+ts2);
  for(int i=0; i<ts2; i++){
- sum = sum + abs(r[mid]-r[i]);
+ sum = sum + abs(r[mid]-r[i]); //絕對值
  }
  cout<<sum<<endl;
  }
