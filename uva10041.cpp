@@ -12,10 +12,10 @@ int main () {
  cin>>ts2;
  
  int r[501]; //array
- int mid = ts2/2;
- int sum = 0;
- for(int i=0; i<ts2; i++)cin>>r[i];
- sort(r,r+ts2);
+ int mid = ts2/2; //mid
+ int sum = 0;//initialization
+ for(int i=0; i<ts2; i++)cin>>r[i]; 
+ sort(r,r+ts2); //sort function
  for(int i=0; i<ts2; i++){
  sum = sum + abs(r[mid]-r[i]); //絕對值
  }
