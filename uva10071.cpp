@@ -12,7 +12,7 @@ int main(){
    return 0;
 }
 
-//version2(瘋狂程社會有bug)
+//version2(瘋狂程設會有bug)
 //#include<iostream>
 //using  namespace std;
 //int main(){
