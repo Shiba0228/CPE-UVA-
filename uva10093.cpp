@@ -1,4 +1,11 @@
 //an easy problem
+//題目給定一個 N 進制 (2 ≤ N ≤ 62) 的數字 R，R 保證可以被 (N-1) 整除。求符合提議的最小 N。當 N = 62 時，用來表示62進制的字符為 0..9, A..Z, a..z。
+//一個N進位制的數，表示成【abc】 = a * N^2 + b * N + c
+                             //= a*N*(N-1+1) + b*(N-1+1) + c
+                             //= a*N*(N-1) + a*N + b*(N-1) + b + c
+                             //= a*N*(N-1) + a*(N-1) + a + b*(N-1) + b + c
+                            //= (a * N + a + b) * (N-1) + (a + b + c)
+
 #include <iostream>
 using namespace std;
  
