@@ -1,4 +1,7 @@
 //Eb Alto Saxophone Player
+//map <char, vector<int> > mp; 紀錄每個音調需按鍵的手指。
+//如果某一按鍵在下一音符時不會用到，那麼就會放開，否則就是維持按著的情況。（持續按著，不加計按鍵次數。）
+//注意：歌曲可能是空的。讀入測資使用 getline(cin, s);
 #include <iostream>
 #include <string>
 #include <string.h>
