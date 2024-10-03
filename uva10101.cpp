@@ -1,9 +1,10 @@
+//bangla number
 #include <iostream>
 #include <string>
 using namespace std;
 
 const long long kuti = 10000000, lakh = 100000, hajar = 1000, shata = 100;
-
+//function
 void processBangla(long long num)
 {
     if (num >= kuti)
@@ -32,7 +33,7 @@ void processBangla(long long num)
         cout << " " << num;
     }
 }
-
+//main function
 int main()
 {
     long long num;
