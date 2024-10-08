@@ -1,4 +1,5 @@
 //hardwood species
+//計算每種樹的出現比例
 #include <cstdio>
 #include <string>
 #include <cstring>
