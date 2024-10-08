@@ -1,5 +1,6 @@
 //divide but not conquer
 //uva10190
+//cmath
 #include <iostream>
 #include <cmath>
 using namespace std;
