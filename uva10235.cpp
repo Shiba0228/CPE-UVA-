@@ -1,5 +1,6 @@
 //simply emirp
 //uva10235
+//判斷測資是否為 prime 或 emirp(質數不為迴文，且反轉後仍為質數)。
 #include<iostream>
 using namespace std;
 
