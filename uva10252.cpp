@@ -1,4 +1,8 @@
 //Common Permutation
+//給予兩個小寫字串，找出重複之字母
+// 先計算出兩個字串之各個字母出現次數（注意：可能包含空字串，使用getline()，而非 cin>>)
+// 比較兩者次數，取最小者，存入 char letter[26]
+// 依字母順序印出字母的個數
 #include <iostream>
 #include <string>
 #include <algorithm>
