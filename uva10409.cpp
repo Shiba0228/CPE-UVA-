@@ -15,29 +15,30 @@ int main() {
 
 			int t;
 			cin >> stg;
+			
 			switch (stg[0]){
-				case 'n':
+				case 'n': //north
 					t = u;
 					u = s;
 					s = o;
 					o = n;
 					n = t;
 					break;
-				case 's':
+				case 's': //south
 					t = u;
 					u = n;
 					n = o;
 					o = s;
 					s = t;
 					break;
-				case 'e':
+				case 'e': //east
 					t = u;
 					u = w;
 					w = o;
 					o = e;
 					e = t;
 					break;
-				case 'w':
+				case 'w': //west
 					t = u;
 					u = e;
 					e = o;
