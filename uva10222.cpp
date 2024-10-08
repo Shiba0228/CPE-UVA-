@@ -1,4 +1,5 @@
 //Decode the mad man
+//看鍵盤
 #include <iostream>
 #include <string>
 using namespace std;
