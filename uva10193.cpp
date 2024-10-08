@@ -1,4 +1,10 @@
 //all you need is love
+//判斷是否能夠找到一個合法的L，使得S1和S2都可以用Love做成。亦即
+//S1 是 L 的倍數
+//S2 是 L 的倍數
+//L 是 S1 和 S2 的公因數
+//利用輾轉相除法計算S1 和 S2 的最大公因數，如果大於 1 (只有一個位元的字串不合法)，表示有解。
+https://yuihuang.com/ 
 #include <iostream>
 using namespace std;
  
