@@ -1,4 +1,6 @@
 //Square Numbers
+//給定兩個整數 a, b，找到 a 和 b 之間的完全平方數個數
+//計算 a 及 b 之平方數，並相減算出其個數
 #include <iostream>
 #include <cmath>
 using namespace std;
