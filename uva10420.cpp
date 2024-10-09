@@ -1,9 +1,13 @@
 //list of conquest
+//解題過程
+//先將輸入值放入 string[]中
+//使用 sort()函數將字串依字母順序排序
+//用迴圈計算重複出現之國家次數
 #include <iostream>
 #include <string>
 #include <algorithm>
 using namespace std;
-int compare(const void *, const void *);
+int compare(const void *, const void *); //function
 
 int main(){
     int n, count, j;
