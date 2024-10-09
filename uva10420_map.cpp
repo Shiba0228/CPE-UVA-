@@ -1,4 +1,5 @@
 //list of conquests
+//使用map
 #include<iostream>
 #include<map>
 using namespace std;
