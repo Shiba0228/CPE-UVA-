@@ -3,6 +3,7 @@
 #include <iostream>
 using namespace std;
 
+//largest square
 int largestSquare(char grid[][101], int m, int n, int r, int c){
     int length = 1;
 
