@@ -16,6 +16,7 @@ int n, m;
 //若 i 和 j 都是奇數（i & 1 和 j & 1 為 true），則按降序排序，即大數在前。
 //若 i 和 j 都是偶數（!(i & 1) 和 !(j & 1)），則按升序排序，即小數在前。
 //若一個是奇數，一個是偶數，則奇數優先。
+
 bool cmp(int i, int j) {
     if (i % m != j % m) {
         return i % m < j % m;
@@ -27,7 +28,9 @@ bool cmp(int i, int j) {
     else
         return i & 1;
 }
-
+//main function:
+//讀入數字後，使用 sort(nums.begin(), nums.end(), cmp) 對 nums 進行排序，cmp 是自定義的比較函數。
+//排序後，輸出結果，每個數字占一行
 int main() {
     while (cin >> n >> m, n) {
         cout << n << " " << m << endl;
