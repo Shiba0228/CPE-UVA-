@@ -16,15 +16,15 @@ using namespace std;
 
 int main()
 {
-    long long S,D;
+    long long S,D; // S: 第一個旅行團的人數, D: 指定的日期
     while(cin>>S>>D)
     {
         while(D!=0)
         {
-            D -= S;
-            if(D <= 0)
+            D -= S; // 以 S 為旅行團的人數，將 S 這個團的停留天數從 D 中減去
+            if(D <= 0) // 如果日期 D 變為 0 或小於 0，說明在這個旅行團停留期
             {
-                cout<<S<<endl;
+                cout<<S<<endl;// 輸出當前的旅行團人數 S
                 break;
             }
             else
