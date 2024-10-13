@@ -9,9 +9,9 @@ void processBangla(long long num)
 {
     if (num >= kuti)
     {
-        processBangla(num / kuti);
+        processBangla(num / kuti); //遞迴處理較大的數值部分
         cout << " kuti";
-        num %= kuti;
+        num %= kuti; // 處理剩下的部分
     }
     if (num >= lakh)
     {
@@ -30,7 +30,7 @@ void processBangla(long long num)
     }
     if (num > 0)
     {
-        cout << " " << num;
+        cout << " " << num; //最後輸出剩餘的數字
     }
 }
 //main function
@@ -41,10 +41,10 @@ int main()
 
     while (cin >> num)
     {
-        for (int i = 0; i < 4 - to_string(case_count).length(); i++)
+        for (int i = 0; i < 4 - to_string(case_count).length(); i++) 
         {
             cout << " ";
-        };
+        }
         cout << case_count << ".";
         if (num == 0)
         {
