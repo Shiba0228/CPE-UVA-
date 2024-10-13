@@ -38,24 +38,24 @@ int main()
 {
     long long num;
     int case_count = 1;
-
+    // 格式化輸出：每個測試案例的編號顯示在開頭，對齊至4位數
     while (cin >> num)
     {
         for (int i = 0; i < 4 - to_string(case_count).length(); i++) 
         {
-            cout << " ";
+            cout << " ";  // 補齊空格，確保對齊
         }
-        cout << case_count << ".";
+        cout << case_count << ".";  // 如果數字是 0，則直接輸出 0
         if (num == 0)
         {
             cout << " 0";
         }
         else
         {
-            processBangla(num);
+            processBangla(num); // 否則將數字按 Bangla 系統格式化
         }
-        cout << endl;
-        case_count++;
+        cout << endl; //change line
+        case_count++; //counter+1
     }
 
     return 0;
