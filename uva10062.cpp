@@ -1,5 +1,14 @@
 //tell me the frequencies
 //getline input
+//對每一列輸入，輸出各字元的 ASCII & 次數
+//需要注意的點有：
+//重複輸入，止於 EOF
+//每一行輸入對應一輸出，長度 ≦ 1000
+//輸入的每個字元：32 ≦ ASCII ≦ 127
+//每行輸出包含 ASCII & 次數
+//按照次數由小到大
+//同樣次數按照 ASCII 由大到小
+//每筆輸出間含一空白行
 #include <iostream>
 #include <algorithm>
 #include <string>
