@@ -1,4 +1,6 @@
 //parity
+//數 n 的「同位元」定義為：其二進位表示法中每位元的和再除以 2 的餘數。例如：21 = 101012 的二進位有三個 1，因此它的同位元為 3 (mod 2)，或 1。
+//在此，你要計算一個整數 1 ≤ I ≤ 2147483647 的同位元。
 #include <iostream>
 #include <string>
 using namespace std;
