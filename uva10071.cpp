@@ -1,14 +1,15 @@
 //back to high school physic
+//位移=2*v*t
 #include<iostream>
 using  namespace std;
 
-int distance(int v, int t){
+int dis(int v, int t){
    return 2*v*t;
 }
 int main(){
    int v, t;
    while(cin>>v >>t)
-      cout<<distance(v,t)<<endl;
+      cout<<dis(v,t)<<endl;
    return 0;
 }
 
