@@ -14,6 +14,7 @@
 //然後輸出替換後的字符。
 //如果不是雙引號，則直接輸出該字符。
 //每行處理結束後，輸出一個換行符，以確保原輸入的格式（每行輸入一行輸出）
+//反引號在esc下面
 #include <iostream>
 #include <string>
 using namespace std;
