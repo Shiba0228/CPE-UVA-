@@ -11,35 +11,26 @@
 //內層循環 for (k = 0; k < i; k++) 從最後一行開始，逐行向上讀取每一行的第 j 個字符，這樣能夠達到逆時針旋轉的效果。
 //使用 if (j < l[i - 1 - k]) 來檢查當前列是否在該行的有效範圍內，如果是，就輸出對應字符；如果超過了該行的長度範圍，就輸出空格。
 #include <iostream>
-#include <stdio.h> 
-#include <string.h>
-
 using namespace std;
-
+string s[105];
+ 
 int main() {
-    char s[105][105]; // 用來存儲最多 105 行，每行最多 105 個字符的輸入
-    int i = 0, j, k, maxlen = 0; // i：計數輸入的行數，maxlen：最長行的長度
-    int l[105]; // 存儲每行的長度
-    // 讀取多行輸入
-    while(gets(s[i])) {
-        l[i] = strlen(s[i]); // 儲存當前行的長度
-        if(strlen(s[i]) > maxlen)
-            maxlen = strlen(s[i]); // 更新最長行的長度
-        i++;  // 行數自增
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    int col = 0, row = 0;
+    while (getline(cin, s[col])){
+        row = max(row, (int)s[col].size());
+        col++;
     }
-   // 將文本進行旋轉輸出
-    for(j = 0; j < maxlen; j++) { // 遍歷每一列，從第 0 列到最長列
-        for(k = 0; k < i; k++) { // 遍歷每一行，從最底行向上讀取
-            if(j < l[i - 1 - k]) // 確保當前列在該行的長度範圍內
-                cout << s[i - 1 - k][j]; // 如果是有效字符，則輸出
-            else
-                cout << " "; // 如果該位置超出當前行的長度，輸出空格
+    for (int i = 0; i < row; i++){
+        for (int j = col-1; j >= 0; j--){
+            if (i >= s[j].size()) cout << " ";
+            else cout << s[j][i];
         }
-        cout << endl; // 每輸出一列，換行
+        cout << "\n";
     }
     return 0;
 }
-
 
 
 
