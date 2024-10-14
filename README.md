@@ -3,4 +3,7 @@
 uva100(YKL08): The 3n + 1 problem   
 uva10008(YKL32): What's Cryptanalysis?  
 uva10019  
-uva10035
+uva10035  
+uva10038
+uva10041  
+uva10050
