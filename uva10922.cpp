@@ -31,4 +31,5 @@ int main(){
             cout << s << " is a multiple of 9 and has 9-degree " << ans << ".\n";
         }
     }
+ return 0;
 }
