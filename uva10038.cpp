@@ -1,5 +1,10 @@
 //Jolly Jumper
 //用vector解
+//迴圈從索引 1 開始遍歷數列，用來計算相鄰兩個數字的差值 diff（使用絕對值 abs() 函數來確保為正數）。
+//條件檢查：
+//diff 的值必須介於 1 和 n−1 之間，否則就不是 Jolly。
+//如果該差值 diff 已經出現過（即 d[diff] != 0），則數列不是 Jolly。
+//如果任何條件不滿足，將 isJolly 設為 false，並終止檢查。
 #include <iostream>
 #include <vector>
 #include <cmath>
