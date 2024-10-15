@@ -1,5 +1,6 @@
 //What's Cryptanalysis?
 //字元、計數
+//密碼翻譯（cryptanalysis）是指把某個人寫的密文（cryptographic writing）加以分解。這個程序通常會對密文訊息做統計分析。你的任務就是寫一個程式來對密文作簡單的分析。
 #include <iostream>
 #include <cctype>
 using namespace std;
