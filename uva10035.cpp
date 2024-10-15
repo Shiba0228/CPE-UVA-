@@ -8,7 +8,7 @@
 //如果和小於 10，則沒有進位，carry 設為 0。
 //最後，將 a 和 b 各自除以 10，這樣就可以移除已經處理過的最右一位，繼續下一位的相加操作。
 //當 a 和 b 都為 0 時，迴圈結束。
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 int main() {
     int a, b;
