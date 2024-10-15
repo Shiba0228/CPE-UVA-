@@ -13,7 +13,7 @@ using namespace std;
 int main()
 {
     string a, b;
-    while (getline(cin, a), getline(cin, b))
+    while (getline(cin, a)&&getline(cin, b))
     {
         int aCounts[128], bCounts[128];
         for (int i = 'a'; i <= 'z'; ++i)
