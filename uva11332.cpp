@@ -1,25 +1,22 @@
 //Summing Digits 
 //將輸入值之所有位數相加，直到相加至 <10 之正整數，即輸出
-#include <bits/stdc++.h>
-
+#include <iostream>
 using namespace std;
-//計算數根的遞迴函數
-//基礎情況：如果 n 小於 10，表示它是一個一位數，直接返回 n。這是遞迴的終止條件。
-//遞迴步驟：如果 n 是多位數，則將 n 的各位數相加，即 f(n / 10) + n % 10。
-//n / 10 表示去掉 n 的最後一位（相當於得到更高位）
-//n % 10 表示 n 的最後一位數。
-//遞迴地對這些相加後的數字再次求數根。
-//這樣的遞迴不斷進行，直到得到一個個位數。
-int f(int n){
-    if(n<10) return n;
-    return f(f(n/10)+n%10);
+  
+int solve(int x) {
+    int ret = 0;
+    while (x) {
+        ret += x % 10;
+        x /= 10;
+    }
+    if (ret < 10) return ret;
+    else return solve(ret);
 }
-//從標準輸入中讀入多個 n 的值，並對每個值計算其數根。
-//輸入結束的條件是 n 為 0，即當讀到 0 時，while 循環終止。
-//對於每個 n，調用 f(n)，然後輸出結果。
-int main(){
+  
+int main() {
     int n;
-    while(cin>>n,n)
-        cout<<f(n)<<endl;
+    while (cin >> n && n) {
+        cout << solve(n) << "\n";
+    }
     return 0;
 }
