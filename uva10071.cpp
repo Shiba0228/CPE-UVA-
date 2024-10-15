@@ -3,13 +3,13 @@
 #include<iostream>
 using  namespace std;
 
-int dis(int v, int t){
+int distance(int v, int t){
    return 2*v*t;
 }
 int main(){
    int v, t;
    while(cin>>v >>t)
-      cout<<dis(v,t)<<endl;
+      cout<<distance(v,t)<<endl;
    return 0;
 }
 
