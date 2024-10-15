@@ -4,13 +4,13 @@
 using namespace std;
   
 int solve(int x) {
-    int ret = 0;
+    int set = 0;
     while (x) {
-        ret += x % 10;
+        set += x % 10;
         x /= 10;
     }
-    if (ret < 10) return ret;
-    else return solve(ret);
+    if (set < 10) return set;
+    else return solve(set);
 }
   
 int main() {
