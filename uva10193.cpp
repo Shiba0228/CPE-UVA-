@@ -4,7 +4,7 @@
 //S2 是 L 的倍數
 //L 是 S1 和 S2 的公因數
 //利用輾轉相除法計算S1 和 S2 的最大公因數，如果大於 1 (只有一個位元的字串不合法)，表示有解。
-https://yuihuang.com/ 
+
 #include <iostream>
 using namespace std;
  
