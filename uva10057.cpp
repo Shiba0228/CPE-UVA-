@@ -12,9 +12,9 @@ int main() {
         for (int i = 0; i < n; i++){
             cin >> a[i];
         }
-        sort(a, a+n);
-        int mid1 = a[(n-1)/2];
-        int mid2 = a[n/2];
+        sort(a, a+n); //sort function
+        int mid1 = a[(n-1)/2]; //odd-> mid1=mid2
+        int mid2 = a[n/2];//even->mid1!=mid2
         int ans = 0;
         for (int i = 0; i < n; i++){
             if (a[i] == mid1 || a[i] == mid2) ans++;
