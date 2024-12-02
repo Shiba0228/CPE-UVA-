@@ -11,7 +11,7 @@ int main() {
  while(cin >> text)
  {
   length++;             //統計所有字母出現的次數
-  count[toupper(text)]++;
+  count[toupper(text)]++; //toupper function
  }
  while(--length)          
  {
