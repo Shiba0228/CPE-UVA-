@@ -9,6 +9,7 @@ int main() {
     int n;
     while (cin >> n){
         int a[n];
+        //input array
         for (int i = 0; i < n; i++){
             cin >> a[i];
         }
