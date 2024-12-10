@@ -5,8 +5,9 @@
 //同樣的，若兩偶數除以 M 餘數大小相等，則較小的偶數排在前面。
 
 
-#include "bits/stdc++.h"
-
+#include <bits/stdc++.h>
+#include<iostream>
+#include<algorithm>
 using namespace std;
 
 int n, m;
