@@ -1,4 +1,4 @@
-//four points
+//four points '練習題
 //平行四邊形
 //給定平行四邊形的兩個相鄰邊的端點的 (x, y)座標。找到第四個點的 (x, y)座標
 #include <iostream>
