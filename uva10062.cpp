@@ -47,7 +47,7 @@ int main(){
                     freq[i] = 10000;
                 }
             }
-            index = distance(freq, min_element(freq, freq + 95));
+            index = distance(freq, min_element(freq, freq + 95)); //126-32+1
             tmp = freq[index];
         }
         count++;
