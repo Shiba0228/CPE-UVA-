@@ -18,8 +18,7 @@ int main() {
         }
         double first = pow(1.0 - p, K-1) * p;
         double r = pow(1.0 - p, N);
-        cout << fixed << setprecision(4) <<
-        first / (1.0 - r) << "\n";
+        cout << fixed << setprecision(4) << first / (1.0 - r) << "\n";
     }
     return 0;
 }
