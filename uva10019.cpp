@@ -1,4 +1,4 @@
-//uva10019
+//uva10019  不會考
 //Funny Encryption Method
 //演算法步驟如下：
 
